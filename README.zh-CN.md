@@ -87,3 +87,18 @@ $ pnpm start
 [2]: https://npmjs.org/package/ahooks
 [image-1]: https://img.shields.io/npm/v/ahooks.svg?style=flat
 [image-2]: https://img.shields.io/npm/dw/ahooks.svg?style=flat
+
+## 个人开发及测试
+低版本node项目启动测试
+```bash
+set NODE_OPTIONS=--openssl-legacy-provider && pnpm run dev
+```
+## 解决 Windows OpenSSL 兼容性问题
+解决 husky commit-msg 错误
+```bash
+git commit -m "docs: add personal development and testing section
+
+- Add Node.js legacy provider command for low version compatibility
+- Include testing instructions for development environment
+- Document OpenSSL compatibility fixes for Windows users"
+```
